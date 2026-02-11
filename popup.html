@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ferreluxade Cookie Extractor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Ferreluxade</h2>
+    <p class="subtitle">Cookie Extractor</p>
+
+    <button id="extract" class="primary">
+      Extract Cookies
+    </button>
+
+    <div class="controls">
+      <label for="format">Export format</label>
+      <select id="format">
+        <option value="json">JSON (.json)</option>
+        <option value="txt">Text (.txt)</option>
+        <option value="netscape">Netscape (.txt)</option>
+      </select>
+    </div>
+
+    <label class="checkbox">
+      <input type="checkbox" id="selectedOnly">
+      Export selected cookies only
+    </label>
+
+    <div id="cookieList" class="cookieList"></div>
+
+    <button id="export" class="secondary" disabled>
+      Export
+    </button>
+
+    <div id="status" class="status"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
